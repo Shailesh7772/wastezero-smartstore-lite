@@ -1,0 +1,21 @@
+supplier_id,supplier_name,reliability_score,delivery_time_days,contact_email,phone
+S000,Global Electronics Corp,0.81,12,contact@globalelectronicscorp.com,+1-555-393-8212
+S001,Fashion Forward Ltd,0.75,3,contact@fashionforwardltd.com,+1-555-306-6032
+S002,Fresh Foods Inc,0.84,6,contact@freshfoodsinc.com,+1-555-662-4523
+S003,Home Essentials Co,0.81,7,contact@homeessentialsco.com,+1-555-761-8447
+S004,BookWorld Publishers,0.95,9,contact@bookworldpublishers.com,+1-555-906-6542
+S005,Beauty & Beyond,0.7,9,contact@beautyandbeyond.com,+1-555-302-4857
+S006,Sports Gear Pro,0.98,13,contact@sportsgearpro.com,+1-555-864-6454
+S007,Tech Solutions Ltd,0.9,7,contact@techsolutionsltd.com,+1-555-509-4512
+S008,Style & Co,0.83,12,contact@styleandco.com,+1-555-204-4256
+S009,Organic Harvest,0.96,4,contact@organicharvest.com,+1-555-555-2025
+S010,Living Spaces,0.75,2,contact@livingspaces.com,+1-555-424-8045
+S011,Knowledge Hub,0.81,10,contact@knowledgehub.com,+1-555-522-6628
+S012,Glow & Grace,0.74,1,contact@glowandgrace.com,+1-555-949-1933
+S013,Active Lifestyle,0.95,6,contact@activelifestyle.com,+1-555-770-4547
+S014,Digital Dynamics,0.7,9,contact@digitaldynamics.com,+1-555-650-1691
+S015,Trendy Threads,0.76,4,contact@trendythreads.com,+1-555-716-1878
+S016,Farm Fresh,0.84,11,contact@farmfresh.com,+1-555-570-6344
+S017,Comfort Zone,0.71,9,contact@comfortzone.com,+1-555-211-8419
+S018,Literary Corner,0.86,10,contact@literarycorner.com,+1-555-963-2885
+S019,Wellness World,0.84,10,contact@wellnessworld.com,+1-555-765-5890

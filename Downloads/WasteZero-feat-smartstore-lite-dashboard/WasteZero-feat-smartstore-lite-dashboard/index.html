@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WasteZero SmartStore Lite Dashboard</title>
+    <link href="./src/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 min-h-screen">
+    <!-- Navigation Menu -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-lg border-b border-gray-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-gray-800">
+                            <span class="text-blue-600">Waste</span>Zero
+                        </h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#" class="nav-link active" data-page="dashboard">Dashboard</a>
+                        <a href="#" class="nav-link" data-page="waste-prediction">Waste Prediction</a>
+                        <a href="#" class="nav-link" data-page="energy-optimization">Energy Optimization</a>
+                        <a href="#" class="nav-link" data-page="green-score">Green Score</a>
+                        <a href="#" class="nav-link" data-page="supplier-analytics">Supplier Analytics</a>
+                        <a href="#" class="nav-link" data-page="seasonal-analytics">Seasonal Analytics</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-lg border-t border-gray-200/50">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="mobile-nav-link active" data-page="dashboard">Dashboard</a>
+                <a href="#" class="mobile-nav-link" data-page="waste-prediction">Waste Prediction</a>
+                <a href="#" class="mobile-nav-link" data-page="energy-optimization">Energy Optimization</a>
+                <a href="#" class="mobile-nav-link" data-page="green-score">Green Score</a>
+                <a href="#" class="mobile-nav-link" data-page="supplier-analytics">Supplier Analytics</a>
+                <a href="#" class="mobile-nav-link" data-page="seasonal-analytics">Seasonal Analytics</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="pt-16 min-h-screen">
+        <!-- Dashboard Page -->
+        <div id="dashboard-page" class="page-content active">
+            <div id="dashboard-container"></div>
+        </div>
+
+        <!-- Waste Prediction Page -->
+        <div id="waste-prediction-page" class="page-content">
+            <div id="waste-prediction-container"></div>
+        </div>
+
+        <!-- Energy Optimization Page -->
+        <div id="energy-optimization-page" class="page-content">
+            <div id="energy-optimization-container"></div>
+        </div>
+
+        <!-- Green Score Page -->
+        <div id="green-score-page" class="page-content">
+            <div id="green-score-container"></div>
+        </div>
+
+        <!-- Supplier Analytics Page -->
+        <div id="supplier-analytics-page" class="page-content">
+            <div id="supplier-analytics-container"></div>
+        </div>
+
+        <!-- Seasonal Analytics Page -->
+        <div id="seasonal-analytics-page" class="page-content">
+            <div id="seasonal-analytics-container"></div>
+        </div>
+    </main>
+
+    <script type="module" src="./src/main.ts"></script>
+</body>
+</html> 

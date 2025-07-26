@@ -1,0 +1,35 @@
+{
+  "name": "wastezero-smartstore-dashboard",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI-Powered Retail Waste Management Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "serve": "python -m http.server 8000"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  },
+  "keywords": [
+    "waste-management",
+    "retail",
+    "dashboard",
+    "ai",
+    "sustainability"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+} 

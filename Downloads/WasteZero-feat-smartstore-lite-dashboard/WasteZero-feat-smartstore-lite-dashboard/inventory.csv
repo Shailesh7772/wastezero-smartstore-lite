@@ -1,0 +1,151 @@
+product_id,product_name,category,supplier_id,purchase_date,expiry_date,expiry_type,quantity_in_stock,cost_price,selling_price,seasonal_demand_factor
+P0000,Shower Curtain,Home Goods,S008,2025-04-12,2025-09-23,Quality Period,78,84.04,142.4,1.0
+P0001,Sweet Potatoes,Groceries,S013,2025-06-27,2025-07-08,Shelf Life,88,16.05,22.58,1.0
+P0002,Summer Shorts,Clothing,S017,2025-05-23,2025-06-20,Fashion Season,187,38.21,79.31,1.0
+P0003,Animal Farm,Books,S011,2025-05-21,2027-04-17,Obsolescence,133,5.94,8.08,1.0
+P0004,Wireless Mouse,Electronics,S016,2025-05-12,2026-05-17,Warranty Period,75,116.54,207.18,1.0
+P0005,Makeup Remover,Beauty & Health,S014,2025-04-11,2025-06-04,Expiration Date,16,49.13,88.03,1.0
+P0006,Wireless Bluetooth Headphones,Electronics,S013,2025-06-19,2026-05-23,Warranty Period,44,138.97,190.82,1.0
+P0007,Running Shoes,Clothing,S014,2025-05-08,2025-06-01,Fashion Season,130,79.4,172.46,1.0
+P0008,Lord of the Flies,Books,S015,2025-05-03,2027-02-22,Obsolescence,33,22.24,29.44,1.0
+P0009,Eye Cream,Beauty & Health,S001,2025-05-19,2025-06-20,Expiration Date,30,46.01,91.78,1.0
+P0010,Sweet Potatoes,Groceries,S005,2025-05-25,2025-05-28,Shelf Life,28,6.85,8.5,1.0
+P0011,Blueberries,Groceries,S018,2025-05-27,2025-05-29,Shelf Life,202,4.78,5.86,1.0
+P0012,Gaming Mouse Pad,Electronics,S010,2025-04-29,2025-11-26,Warranty Period,45,58.18,85.39,1.0
+P0013,Backpack,Sports & Outdoors,S012,2025-05-24,2026-06-08,Wear Period,83,123.7,221.22,1.4
+P0014,Fishing Rod,Sports & Outdoors,S017,2025-06-24,2027-03-28,Wear Period,22,81.5,129.06,1.4
+P0015,Business Blazer,Clothing,S001,2025-05-09,2025-06-02,Fashion Season,123,19.81,34.6,1.0
+P0016,Tennis Racket,Sports & Outdoors,S019,2025-06-01,2025-10-17,Wear Period,106,147.41,220.45,1.4
+P0017,Cotton T-Shirt,Clothing,S006,2025-05-22,2025-06-02,Fashion Season,64,33.02,56.25,1.0
+P0018,Curtains,Home Goods,S000,2025-07-02,2026-01-21,Quality Period,119,32.39,61.3,1.0
+P0019,Chicken Breast,Groceries,S014,2025-04-11,2025-04-17,Shelf Life,185,19.55,27.15,1.0
+P0020,Curtains,Home Goods,S018,2025-05-13,2025-10-10,Quality Period,169,9.23,12.41,1.0
+P0021,Throw Pillow,Home Goods,S016,2025-05-10,2027-01-08,Quality Period,21,6.63,12.09,1.0
+P0022,Throw Pillow,Home Goods,S008,2025-06-26,2027-06-07,Quality Period,137,38.4,69.55,1.0
+P0023,Area Rug,Home Goods,S009,2025-05-21,2026-08-17,Quality Period,127,80.22,117.3,1.0
+P0024,Sunscreen SPF 50,Beauty & Health,S009,2025-06-14,2025-06-28,Expiration Date,60,4.11,6.41,1.0
+P0025,Bath Towel,Home Goods,S016,2025-05-15,2025-08-13,Quality Period,54,91.21,139.53,1.0
+P0026,Blanket,Home Goods,S014,2025-05-14,2025-10-27,Quality Period,48,57.27,96.03,1.0
+P0027,Area Rug,Home Goods,S016,2025-05-17,2025-11-30,Quality Period,25,29.37,48.27,1.0
+P0028,Memory Card 64GB,Electronics,S003,2025-04-17,2027-04-13,Warranty Period,90,22.86,29.94,1.0
+P0029,Shampoo,Beauty & Health,S018,2025-05-27,2025-06-28,Expiration Date,160,43.89,85.23,1.0
+P0030,Rich Dad Poor Dad,Books,S008,2025-06-18,2026-10-02,Obsolescence,29,7.05,10.53,1.0
+P0031,Coffee Mug Set,Home Goods,S011,2025-05-13,2025-11-09,Quality Period,83,54.69,96.21,1.0
+P0032,Soccer Ball,Sports & Outdoors,S016,2025-04-22,2025-10-22,Wear Period,156,80.73,121.38,1.4
+P0033,Razor Blades,Beauty & Health,S016,2025-06-03,2025-06-14,Expiration Date,27,16.21,32.13,1.0
+P0034,Cable Organizer,Electronics,S017,2025-06-06,2026-01-04,Warranty Period,39,183.67,285.77,1.0
+P0035,Camping Tent,Sports & Outdoors,S002,2025-04-09,2025-08-16,Wear Period,187,60.91,105.38,1.4
+P0036,Throw Pillow,Home Goods,S001,2025-05-07,2026-09-21,Quality Period,120,32.42,43.18,1.0
+P0037,Running Shoes,Clothing,S014,2025-07-02,2025-07-09,Fashion Season,28,65.75,93.02,1.0
+P0038,Athletic Socks,Sports & Outdoors,S012,2025-04-30,2026-05-22,Wear Period,73,16.36,28.11,1.4
+P0039,Kitchen Utensils,Home Goods,S010,2025-04-08,2026-12-08,Quality Period,112,49.01,71.42,1.0
+P0040,Nail Polish,Beauty & Health,S003,2025-04-08,2025-06-07,Expiration Date,10,46.03,89.35,1.0
+P0041,Gym Bag,Sports & Outdoors,S008,2025-04-11,2025-10-27,Wear Period,48,28.54,37.79,1.4
+P0042,Bicycle Helmet,Sports & Outdoors,S019,2025-06-26,2027-02-19,Wear Period,66,21.82,39.23,1.4
+P0043,Moisturizing Cream,Beauty & Health,S009,2025-04-19,2025-05-13,Expiration Date,105,30.96,57.41,1.0
+P0044,Casual Dress,Clothing,S004,2025-05-26,2025-06-18,Fashion Season,101,43.64,83.55,1.0
+P0045,Curtains,Home Goods,S010,2025-04-28,2026-11-21,Quality Period,137,33.64,55.56,1.0
+P0046,Face Mask,Beauty & Health,S013,2025-05-19,2025-07-16,Expiration Date,196,43.44,75.06,1.0
+P0047,The Hobbit,Books,S011,2025-06-16,2026-01-25,Obsolescence,169,21.21,25.53,1.0
+P0048,Laundry Basket,Home Goods,S018,2025-05-10,2026-11-07,Quality Period,138,11.48,20.11,1.0
+P0049,Toothpaste,Beauty & Health,S019,2025-04-20,2025-05-26,Expiration Date,41,34.04,52.05,1.0
+P0050,Deodorant,Beauty & Health,S007,2025-06-20,2025-09-01,Expiration Date,39,42.65,82.14,1.0
+P0051,Deodorant,Beauty & Health,S004,2025-06-02,2025-06-24,Expiration Date,119,41.79,64.84,1.0
+P0052,Body Wash,Beauty & Health,S014,2025-05-09,2025-06-05,Expiration Date,53,35.73,58.91,1.0
+P0053,Memory Card 64GB,Electronics,S019,2025-06-22,2026-03-08,Warranty Period,15,166.95,279.11,1.0
+P0054,Lip Balm,Beauty & Health,S002,2025-05-06,2025-05-18,Expiration Date,89,29.3,41.65,1.0
+P0055,Backpack,Sports & Outdoors,S018,2025-06-23,2026-05-18,Wear Period,175,82.74,110.25,1.4
+P0056,Think and Grow Rich,Books,S009,2025-04-14,2027-07-15,Obsolescence,59,29.93,42.46,1.0
+P0057,Bathroom Rug,Home Goods,S015,2025-06-19,2026-04-26,Quality Period,173,80.92,128.86,1.0
+P0058,Throw Pillow,Home Goods,S019,2025-07-05,2027-05-08,Quality Period,81,76.41,118.24,1.0
+P0059,Phone Screen Protector,Electronics,S004,2025-04-09,2025-11-04,Warranty Period,94,47.51,72.75,1.0
+P0060,Brown Rice,Groceries,S008,2025-04-22,2025-05-11,Shelf Life,56,24.21,33.21,1.0
+P0061,Conditioner,Beauty & Health,S000,2025-05-02,2025-05-25,Expiration Date,112,22.37,42.47,1.0
+P0062,Summer Shorts,Clothing,S013,2025-05-19,2025-06-13,Fashion Season,80,8.56,15.68,1.0
+P0063,Wall Clock,Home Goods,S013,2025-05-03,2025-10-24,Quality Period,178,58.54,80.26,1.0
+P0064,Brave New World,Books,S006,2025-04-28,2027-08-25,Obsolescence,150,9.12,13.46,1.0
+P0065,Bed Sheet Set,Home Goods,S014,2025-04-15,2025-11-03,Quality Period,74,69.74,114.23,1.0
+P0066,Formal Pants,Clothing,S018,2025-06-30,2025-07-14,Fashion Season,156,59.7,93.94,1.0
+P0067,Tennis Shoes,Sports & Outdoors,S008,2025-05-27,2025-11-12,Wear Period,196,124.35,164.08,1.4
+P0068,Face Mask,Beauty & Health,S008,2025-06-30,2025-07-24,Expiration Date,157,21.42,30.79,1.0
+P0069,Desk Lamp,Home Goods,S014,2025-04-27,2026-12-20,Quality Period,28,8.81,12.93,1.0
+P0070,Tennis Racket,Sports & Outdoors,S008,2025-07-05,2026-03-07,Wear Period,121,70.37,114.81,1.4
+P0071,Bell Peppers,Groceries,S006,2025-05-24,2025-05-25,Shelf Life,65,18.28,23.97,1.0
+P0072,Lip Balm,Beauty & Health,S003,2025-05-30,2025-07-20,Expiration Date,23,18.58,35.89,1.0
+P0073,Wireless Mouse,Electronics,S004,2025-06-27,2025-07-29,Warranty Period,66,163.66,277.27,1.0
+P0074,Hand Lotion,Beauty & Health,S014,2025-04-26,2025-07-01,Expiration Date,83,27.31,50.13,1.0
+P0075,Denim Jacket,Clothing,S006,2025-04-11,2025-04-20,Fashion Season,100,70.14,134.94,1.0
+P0076,Essentialism,Books,S017,2025-05-18,2028-04-21,Obsolescence,147,19.67,24.97,1.0
+P0077,USB Flash Drive 32GB,Electronics,S003,2025-05-31,2025-10-12,Warranty Period,83,153.99,235.66,1.0
+P0078,Casual Dress,Clothing,S015,2025-06-12,2025-06-18,Fashion Season,30,25.96,56.13,1.0
+P0079,The 7 Habits,Books,S013,2025-05-25,2026-12-04,Obsolescence,75,15.2,21.56,1.0
+P0080,Cotton T-Shirt,Clothing,S015,2025-05-12,2025-05-23,Fashion Season,54,37.24,71.41,1.0
+P0081,Razor Blades,Beauty & Health,S004,2025-07-04,2025-07-31,Expiration Date,165,28.69,53.58,1.0
+P0082,The Catcher in the Rye,Books,S014,2025-06-13,2027-11-15,Obsolescence,16,22.84,32.4,1.0
+P0083,Wireless Earbuds,Electronics,S003,2025-05-03,2027-02-06,Warranty Period,31,46.83,78.75,1.0
+P0084,Deep Work,Books,S005,2025-05-19,2027-04-16,Obsolescence,141,28.16,37.34,1.0
+P0085,Knit Sweater,Clothing,S016,2025-04-20,2025-04-30,Fashion Season,188,76.84,155.13,1.0
+P0086,Moisturizing Cream,Beauty & Health,S013,2025-04-29,2025-07-05,Expiration Date,10,29.12,53.7,1.0
+P0087,Free-Range Eggs,Groceries,S015,2025-06-21,2025-06-27,Shelf Life,244,16.88,26.77,1.0
+P0088,Hand Lotion,Beauty & Health,S013,2025-06-12,2025-08-03,Expiration Date,128,3.54,6.7,1.0
+P0089,Essentialism,Books,S012,2025-04-25,2026-06-14,Obsolescence,19,9.4,12.12,1.0
+P0090,Fresh Milk 2L,Groceries,S008,2025-05-19,2025-05-21,Shelf Life,94,2.82,3.57,1.0
+P0091,The Catcher in the Rye,Books,S017,2025-05-16,2027-01-13,Obsolescence,149,11.5,14.4,1.0
+P0092,Throw Pillow,Home Goods,S016,2025-06-23,2026-05-27,Quality Period,121,60.13,110.74,1.0
+P0093,Camping Tent,Sports & Outdoors,S008,2025-07-04,2026-06-12,Wear Period,174,17.35,23.72,1.4
+P0094,Cable Organizer,Electronics,S009,2025-05-14,2026-09-13,Warranty Period,74,62.49,98.11,1.0
+P0095,Face Mask,Beauty & Health,S007,2025-05-27,2025-08-21,Expiration Date,71,22.83,42.04,1.0
+P0096,Baseball Cap,Clothing,S010,2025-06-19,2025-08-05,Fashion Season,36,31.26,45.29,1.0
+P0097,Bell Peppers,Groceries,S014,2025-06-22,2025-06-23,Shelf Life,261,7.54,11.25,1.0
+P0098,Fresh Milk 2L,Groceries,S000,2025-06-29,2025-07-02,Shelf Life,62,21.7,28.33,1.0
+P0099,Tennis Shoes,Sports & Outdoors,S005,2025-04-23,2026-01-18,Wear Period,195,126.48,225.37,1.4
+P0100,Perfume,Beauty & Health,S013,2025-05-08,2025-07-15,Expiration Date,36,28.46,48.16,1.0
+P0101,Eye Cream,Beauty & Health,S015,2025-05-06,2025-07-15,Expiration Date,105,21.39,33.63,1.0
+P0102,Athletic Socks,Sports & Outdoors,S002,2025-04-09,2026-06-25,Wear Period,103,25.48,33.3,1.4
+P0103,Cable Organizer,Electronics,S017,2025-05-14,2026-05-23,Warranty Period,26,72.52,120.23,1.0
+P0104,Strawberries,Groceries,S013,2025-05-15,2025-05-17,Shelf Life,35,4.54,7.19,1.0
+P0105,Almond Milk,Groceries,S005,2025-05-01,2025-05-18,Shelf Life,136,18.81,26.13,1.0
+P0106,Denim Jacket,Clothing,S019,2025-06-30,2025-07-22,Fashion Season,110,65.51,129.12,1.0
+P0107,Trash Can,Home Goods,S013,2025-05-28,2025-10-30,Quality Period,149,96.92,163.24,1.0
+P0108,Dumbbells Set,Sports & Outdoors,S005,2025-04-26,2027-02-03,Wear Period,24,95.87,142.74,1.4
+P0109,Basketball,Sports & Outdoors,S002,2025-05-20,2025-09-27,Wear Period,57,101.1,144.55,1.4
+P0110,Body Wash,Beauty & Health,S014,2025-06-04,2025-07-28,Expiration Date,172,41.19,81.93,1.0
+P0111,The Hobbit,Books,S019,2025-06-14,2026-05-05,Obsolescence,136,15.86,19.43,1.0
+P0112,Denim Jacket,Clothing,S017,2025-06-07,2025-06-21,Fashion Season,88,78.43,123.14,1.0
+P0113,Phone Stand,Electronics,S004,2025-07-01,2026-02-22,Warranty Period,53,46.76,62.81,1.0
+P0114,Phone Screen Protector,Electronics,S016,2025-06-03,2026-01-24,Warranty Period,81,40.49,59.49,1.0
+P0115,Cherry Tomatoes,Groceries,S007,2025-06-03,2025-06-11,Shelf Life,184,24.51,31.22,1.0
+P0116,Denim Jacket,Clothing,S019,2025-04-20,2025-05-02,Fashion Season,22,21.49,37.72,1.0
+P0117,Toothpaste,Beauty & Health,S018,2025-04-18,2025-06-14,Expiration Date,187,44.78,73.68,1.0
+P0118,The 7 Habits,Books,S013,2025-04-30,2026-02-03,Obsolescence,90,25.47,33.73,1.0
+P0119,The Subtle Art,Books,S015,2025-05-17,2026-01-19,Obsolescence,181,17.94,24.34,1.0
+P0120,Tennis Racket,Sports & Outdoors,S016,2025-04-12,2026-03-09,Wear Period,126,57.13,96.24,1.4
+P0121,Wall Clock,Home Goods,S000,2025-04-24,2025-10-15,Quality Period,145,6.75,11.79,1.0
+P0122,Broccoli Crowns,Groceries,S013,2025-04-16,2025-04-20,Shelf Life,70,7.07,9.06,1.0
+P0123,Whole Grain Bread,Groceries,S002,2025-04-11,2025-04-15,Shelf Life,165,19.12,28.46,1.0
+P0124,Face Mask,Beauty & Health,S011,2025-06-06,2025-07-29,Expiration Date,178,8.67,12.89,1.0
+P0125,Polo Shirt,Clothing,S013,2025-05-15,2025-05-31,Fashion Season,98,11.43,18.88,1.0
+P0126,The Hobbit,Books,S013,2025-04-20,2026-11-28,Obsolescence,33,11.7,15.74,1.0
+P0127,Glass Water Bottle,Home Goods,S018,2025-05-19,2026-09-30,Quality Period,186,44.05,61.17,1.0
+P0128,Sunscreen SPF 50,Beauty & Health,S014,2025-04-09,2025-05-09,Expiration Date,102,4.24,7.93,1.0
+P0129,Salmon Fillet,Groceries,S006,2025-04-14,2025-04-27,Shelf Life,147,20.55,32.75,1.0
+P0130,Dinner Plate Set,Home Goods,S009,2025-06-14,2027-01-31,Quality Period,13,20.62,36.06,1.0
+P0131,Casual Blouse,Clothing,S015,2025-05-01,2025-05-09,Fashion Season,12,11.32,23.57,1.0
+P0132,Wireless Keyboard,Electronics,S007,2025-05-06,2026-01-24,Warranty Period,89,122.59,219.66,1.0
+P0133,Cotton T-Shirt,Clothing,S007,2025-05-14,2025-07-12,Fashion Season,121,23.38,36.07,1.0
+P0134,Basketball,Sports & Outdoors,S007,2025-06-08,2026-01-16,Wear Period,102,63.15,106.15,1.4
+P0135,Nail Polish,Beauty & Health,S013,2025-04-15,2025-05-31,Expiration Date,46,40.46,63.23,1.0
+P0136,Running Shorts,Sports & Outdoors,S000,2025-04-16,2025-07-19,Wear Period,50,17.09,26.05,1.4
+P0137,Denim Jeans,Clothing,S014,2025-04-27,2025-05-24,Fashion Season,182,55.2,111.28,1.0
+P0138,The Great Gatsby,Books,S008,2025-06-29,2028-06-08,Obsolescence,88,19.86,26.18,1.0
+P0139,Hiking Boots,Sports & Outdoors,S001,2025-06-02,2026-05-08,Wear Period,130,138.84,208.07,1.4
+P0140,Cotton T-Shirt,Clothing,S019,2025-05-20,2025-06-08,Fashion Season,122,10.79,17.56,1.0
+P0141,Avocados,Groceries,S012,2025-05-20,2025-05-25,Shelf Life,71,10.3,15.81,1.0
+P0142,Bluetooth Speaker,Electronics,S015,2025-05-14,2026-01-15,Warranty Period,61,124.21,165.31,1.0
+P0143,Wireless Mouse,Electronics,S005,2025-05-22,2027-01-20,Warranty Period,29,124.75,178.27,1.0
+P0144,The 7 Habits,Books,S000,2025-05-02,2028-03-10,Obsolescence,16,26.38,32.16,1.0
+P0145,Shampoo,Beauty & Health,S003,2025-06-19,2025-09-11,Expiration Date,54,26.55,41.9,1.0
+P0146,Phone Screen Protector,Electronics,S010,2025-06-20,2027-02-22,Warranty Period,58,32.93,50.76,1.0
+P0147,Body Wash,Beauty & Health,S013,2025-04-24,2025-07-11,Expiration Date,15,11.97,16.84,1.0
+P0148,Water Bottle,Sports & Outdoors,S007,2025-05-26,2027-03-16,Wear Period,168,147.08,191.4,1.4
+P0149,Deep Work,Books,S007,2025-06-06,2028-02-22,Obsolescence,170,11.93,17.61,1.0
