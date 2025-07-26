@@ -3,7 +3,7 @@ import { DataService } from '../services/DataService'
 export class Dashboard {
     private dataService: DataService
     private container: HTMLElement
-    private isLoading = true
+    // private isLoading = true
 
     constructor(container: HTMLElement) {
         this.container = container
@@ -14,7 +14,6 @@ export class Dashboard {
     private async initialize(): Promise<void> {
         try {
             await this.dataService.loadData()
-            this.isLoading = false
             this.render()
         } catch (error) {
             console.error('Failed to initialize dashboard:', error)
@@ -216,23 +215,23 @@ export class Dashboard {
         })
     }
 
-    private createLoadingSpinner(): HTMLElement {
-        const spinner = document.createElement('div')
-        spinner.className = 'flex items-center justify-center min-h-screen w-full'
-        spinner.innerHTML = `
-            <div class="text-center">
-                <div class="loading-spinner w-32 h-32 mb-8"></div>
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Loading SmartStore Dashboard</h2>
-                <p class="text-gray-700 text-lg">Analyzing your retail data...</p>
-                <div class="mt-8 flex space-x-2 justify-center">
-                    <div class="w-3 h-3 bg-white rounded-full animate-bounce"></div>
-                    <div class="w-3 h-3 bg-white rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
-                    <div class="w-3 h-3 bg-white rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
-                </div>
-            </div>
-        `
-        return spinner
-    }
+    // private createLoadingSpinner(): HTMLElement {
+    //     const spinner = document.createElement('div')
+    //     spinner.className = 'flex items-center justify-center min-h-screen w-full'
+    //     spinner.innerHTML = `
+    //         <div class="text-center">
+    //             <div class="loading-spinner w-32 h-32 mb-8"></div>
+    //             <h2 class="text-2xl font-bold text-gray-900 mb-4">Loading SmartStore Dashboard</h2>
+    //             <p class="text-gray-700 text-lg">Analyzing your retail data...</p>
+    //             <div class="mt-8 flex space-x-2 justify-center">
+    //                 <div class="w-3 h-3 bg-white rounded-full animate-bounce"></div>
+    //                 <div class="w-3 h-3 bg-white rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+    //                 <div class="w-3 h-3 bg-white rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+    //             </div>
+    //         </div>
+    //     `
+    //     return spinner
+    // }
 
     private showError(message: string): void {
         this.container.innerHTML = `
@@ -249,95 +248,59 @@ export class Dashboard {
         `
     }
 
-    private async refreshData(): Promise<void> {
-        this.isLoading = true
-        this.render()
-        
-        try {
-            await this.dataService.loadData()
-            this.isLoading = false
-            this.render()
-        } catch (error) {
-            console.error('Failed to refresh data:', error)
-            this.showError('Failed to refresh data. Please try again.')
-        }
-    }
+    // private async refreshData(): Promise<void> {
+    //     this.render()
+    //     
+    //     try {
+    //         await this.dataService.loadData()
+    //         this.render()
+    //     } catch (error) {
+    //         console.error('Failed to refresh data:', error)
+    //         this.showError('Failed to refresh data. Please try again.')
+    //     }
+    // }
 
-    private createSummary(): HTMLElement {
-        const summary = document.createElement('section')
-        summary.className = 'card w-full'
-        
-        const inventoryData = this.dataService.getInventoryData()
-        const suppliersData = this.dataService.getSuppliersData()
-        const salesData = this.dataService.getSalesData()
-        const totalInventoryValue = this.dataService.getTotalInventoryValue()
+    // private createSummary(): HTMLElement {
+    //     const summary = document.createElement('section')
+    //     summary.className = 'card w-full'
+    //     
+    //     const inventoryData = this.dataService.getInventoryData()
+    //     const suppliersData = this.dataService.getSuppliersData()
+    //     const salesData = this.dataService.getSalesData()
+    //     const totalInventoryValue = this.dataService.getTotalInventoryValue()
 
-        summary.innerHTML = `
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">📊 Dashboard Summary</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="metric-card">
-                    <h3 class="text-xl font-semibold text-gray-700 mb-4">📦 Inventory Overview</h3>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-600">Total Products:</span>
-                            <span class="font-bold text-2xl text-gray-900">${inventoryData.length}</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-600">Categories:</span>
-                            <span class="font-bold text-2xl text-gray-900">${new Set(inventoryData.map((item: any) => item.category)).size}</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-600">Total Value:</span>
-                            <span class="font-bold text-2xl text-green-600">$${totalInventoryValue.toLocaleString()}</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="metric-card">
-                    <h3 class="text-xl font-semibold text-gray-700 mb-4">🏭 Supplier Overview</h3>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-600">Total Suppliers:</span>
-                            <span class="font-bold text-2xl text-gray-900">${suppliersData.length}</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-600">Avg Reliability:</span>
-                            <span class="font-bold text-2xl text-blue-600">${(suppliersData.reduce((sum: any, s: any) => sum + (s.reliability_score || 0), 0) / (suppliersData.length || 1)).toFixed(2)}</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-600">High Risk:</span>
-                            <span class="font-bold text-2xl text-red-600">${(this.dataService.getSupplierMetrics ? this.dataService.getSupplierMetrics().filter((s: any) => s.risk_score > 70).length : 0)}</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="metric-card">
-                    <h3 class="text-xl font-semibold text-gray-700 mb-4">📈 Sales Overview</h3>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-600">Total Records:</span>
-                            <span class="font-bold text-2xl text-gray-900">${salesData.length.toLocaleString()}</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-600">At Risk Products:</span>
-                            <span class="font-bold text-2xl text-red-600">${(this.dataService.getAtRiskProducts ? this.dataService.getAtRiskProducts().length : 0)}</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-600">Predicted Waste:</span>
-                            <span class="font-bold text-2xl text-red-600">$${this.dataService.getPredictedWasteValue().toLocaleString()}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-8 text-center">
-                <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-3 rounded-full">
-                    <span class="text-xl">✨</span>
-                    <span class="font-semibold">AI-Powered Analytics for Sustainable Retail</span>
-                </div>
-            </div>
-        `
-
-        return summary
-    }
+    //     summary.innerHTML = `
+    //         <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">📊 Dashboard Summary</h2>
+    //         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    //             <div class="metric-card">
+    //                 <h3 class="text-xl font-semibold text-gray-700 mb-4">📦 Inventory Overview</h3>
+    //                 <div class="space-y-4">
+    //                     <div class="flex justify-between items-center">
+    //                         <span class="text-gray-600">Total Products:</span>
+    //                         <span class="font-bold text-2xl text-gray-900">${inventoryData.length}</span>
+    //                     </div>
+    //                     <div class="flex justify-between items-center">
+    //                         <span class="text-gray-600">Categories:</span>
+    //                         <span class="font-bold text-2xl text-gray-900">${new Set(inventoryData.map((item: any) => item.category)).size}</span>
+    //                     </div>
+    //                     <div class="flex justify-between items-center">
+    //                         <span class="text-gray-600">Total Value:</span>
+    //                         <span class="font-bold text-2xl text-green-600">$${totalInventoryValue.toLocaleString()}</span>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //             
+    //             <div class="metric-card">
+    //                 <h3 class="text-xl font-semibold text-gray-700 mb-4">🏭 Supplier Overview</h3>
+    //                 <div class="space-y-4">
+    //                     <div class="flex justify-between items-center">
+    //                         <span class="text-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+    //                         </svg>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     `
+    //     return summary
+    // }
 } 

@@ -1,6 +1,6 @@
 import './style.css'
 import { Dashboard } from './components/Dashboard'
-import { DataService } from './services/DataService'
+// import { DataService } from './services/DataService'
 import { WastePrediction } from './components/WastePrediction'
 import { EnergyOptimization } from './components/EnergyOptimization'
 import { GreenScore } from './components/GreenScore'
@@ -8,7 +8,7 @@ import { SupplierAnalytics } from './components/SupplierAnalytics'
 import { SeasonalAnalytics } from './components/SeasonalAnalytics'
 
 class NavigationManager {
-    private currentPage: string = 'dashboard'
+    // private currentPage: string = 'dashboard'
 
     constructor() {
         this.initializeNavigation()
@@ -66,7 +66,7 @@ class NavigationManager {
         const targetPage = document.getElementById(`${page}-page`)
         if (targetPage) {
             targetPage.classList.add('active')
-            this.currentPage = page
+            // this.currentPage = page
             this.loadPage(page)
         }
 

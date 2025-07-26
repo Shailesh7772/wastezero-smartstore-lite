@@ -18,9 +18,9 @@ export class EnergyOptimization {
     }
 
     private render(): void {
-        const footfallData = this.dataService.getFootfallData()
-        const hourlyLabels = footfallData.map(item => `${item.hour}:00`)
-        const hourlyVisits = footfallData.map(item => item.visits)
+        // const footfallData = this.dataService.getFootfallData()
+        // const hourlyLabels = footfallData.map(item => `${item.hour}:00`)
+        // const hourlyVisits = footfallData.map(item => item.visits)
 
         // Persist slider value in localStorage
         let sliderValue = 50;
