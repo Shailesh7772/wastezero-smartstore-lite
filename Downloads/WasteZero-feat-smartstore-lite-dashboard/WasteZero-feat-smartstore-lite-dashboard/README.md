@@ -1,224 +1,203 @@
-# 🚀 WasteZero - AI-Powered Retail Waste Management Dashboard
+# WasteZero SmartStore Lite Dashboard
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+A comprehensive full-stack retail analytics platform that combines React frontend with Python backend to provide AI-powered waste prediction, energy optimization, and sustainable retail management.
 
-> **An intelligent retail waste management and sustainability dashboard designed to help retail stores reduce inventory waste and optimize energy consumption using AI-powered analytics and predictive modeling.**
+## 🚀 Features
 
-## 🎯 **Project Overview**
+### Frontend (React + TypeScript)
+- **Interactive Dashboard**: Real-time metrics and analytics visualization
+- **Waste Prediction**: AI-powered forecasting to minimize waste and optimize inventory
+- **Energy Optimization**: Smart energy management with interactive controls
+- **Green Score**: Comprehensive sustainability performance tracking
+- **Supplier Analytics**: Supplier performance and sustainability metrics
+- **Seasonal Analytics**: Seasonal trends and demand forecasting
+- **Responsive Design**: Modern UI with Tailwind CSS
 
-WasteZero addresses two critical challenges faced by retail businesses:
-- **Inventory Waste Management** - Predicting and preventing product expiry/waste
-- **Energy Optimization** - Reducing energy costs through smart scheduling
+### Backend (Python)
+- **Data Processing**: CSV data handling and analysis
+- **AI Models**: Machine learning for waste prediction
+- **Analytics Engine**: Comprehensive business intelligence
+- **API Ready**: Flask/FastAPI integration ready
 
-## ✨ **Key Features**
+## 🛠️ Tech Stack
 
-### 🍎 **Waste Prediction System**
-- **AI-Powered Risk Assessment**: Analyzes 150+ products across 7 categories
-- **Intelligent Expiry Logic**: Category-specific expiry types (Shelf Life, Warranty Period, Fashion Season, etc.)
-- **Dynamic Thresholds**: Automatically calculates optimal risk thresholds
-- **Real-time Risk Scoring**: Identifies products at risk of waste
-- **Financial Impact Analysis**: Shows potential losses in thousands of dollars
+### Frontend
+- **React** with TypeScript
+- **Vite** for build tooling
+- **Tailwind CSS** for styling
+- **Chart.js** for data visualization
+- **Custom Data Service** for state management
 
-### 🚨 **Emergency Alert System**
-- **URGENT Alerts**: Products expiring within 7 days
-- **OVERSTOCK Alerts**: Products with excessive inventory levels
-- **NO SALES Alerts**: Products with zero demand in 30 days
-- **Color-coded Notifications**: Red, yellow, and blue alerts for immediate attention
+### Backend
+- **Python 3.8+**
+- **Pandas** for data manipulation
+- **NumPy** for numerical computations
+- **Scikit-learn** for machine learning
+- **Flask/FastAPI** (ready for API implementation)
 
-### 💡 **Energy Optimization**
-- **Footfall Analysis**: Infers customer patterns from sales data
-- **Smart Scheduling**: Recommends optimal lighting/AC schedules
-- **Peak Hour Detection**: Identifies busy periods (lunch 12-2 PM, evening 5-7 PM)
-- **Cost Savings Calculator**: Shows daily energy and cost savings
-
-### ♻️ **GreenScore Sustainability Rating**
-- **Composite Score**: 60% waste reduction + 40% energy savings
-- **Real-time Calculation**: Updates based on current inventory and energy usage
-- **Visual Indicators**: Color-coded scores (Green=Good, Orange=Moderate, Red=Poor)
-
-### 🏭 **Supplier Analytics**
-- **Risk Assessment**: Evaluates supplier reliability and performance
-- **Delivery Analysis**: Tracks delivery times and consistency
-- **Inventory Value Tracking**: Monitors supplier-specific inventory worth
-- **Recommendations**: Suggests supplier improvements and alternatives
-
-## 🛠 **Technology Stack**
-
-- **Frontend**: Streamlit (Python web framework)
-- **Data Processing**: Pandas, NumPy
-- **AI/ML**: Scikit-learn, Custom algorithms
-- **Visualization**: Plotly, Matplotlib
-- **Data Storage**: CSV files (can be extended to databases)
-
-## 📊 **Demo Data**
-
-The application includes realistic sample data:
-- **150 Products** across 7 categories (Electronics, Clothing, Groceries, Home Goods, Books, Beauty & Health, Sports & Outdoors)
-- **2000+ Sales Records** with realistic patterns
-- **20 Suppliers** with performance metrics
-- **Employee Schedules** for operational insights
-
-## 🚀 **Quick Start**
+## 📦 Installation
 
 ### Prerequisites
+- Node.js 16+ and npm
+- Python 3.8+
+- Git
+
+### Frontend Setup
 ```bash
-Python 3.8+
-pip
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-### Installation
+### Backend Setup
+```bash
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Run Python scripts
+python app.py
+```
+
+## 🚀 Quick Start
 
 1. **Clone the repository**
-```bash
-git clone https://github.com/PRAVEENK44/WasteZero.git
-cd WasteZero
-```
+   ```bash
+   git clone https://github.com/yourusername/wastezero-smartstore-lite.git
+   cd wastezero-smartstore-lite
+   ```
 
 2. **Install dependencies**
+   ```bash
+   # Frontend
+   npm install
+   
+   # Backend
+   pip install -r requirements.txt
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173`
+
+## 📁 Project Structure
+
+```
+WasteZero-feat-smartstore-lite-dashboard/
+├── src/
+│   ├── components/          # React components
+│   │   ├── Dashboard.ts
+│   │   ├── WastePrediction.ts
+│   │   ├── EnergyOptimization.ts
+│   │   ├── GreenScore.ts
+│   │   ├── SupplierAnalytics.ts
+│   │   └── SeasonalAnalytics.ts
+│   ├── services/           # Data services
+│   │   └── DataService.ts
+│   ├── main.ts            # App entry point
+│   └── style.css          # Global styles
+├── data/                  # CSV data files
+│   ├── inventory.csv
+│   ├── sales.csv
+│   ├── suppliers.csv
+│   └── employee_schedules.csv
+├── utils/                 # Python utilities
+│   ├── waste_prediction.py
+│   ├── energy_optimization.py
+│   ├── seasonal_analytics.py
+│   ├── supplier_analytics.py
+│   └── greenscore.py
+├── model/                 # ML models
+│   └── train_model.py
+├── app.py                 # Main Python app
+├── requirements.txt       # Python dependencies
+├── package.json          # Node.js dependencies
+└── README.md
+```
+
+## 🔧 Configuration
+
+### Environment Variables
+Create a `.env` file in the root directory:
+```env
+# API Configuration
+API_BASE_URL=http://localhost:5000
+NODE_ENV=development
+
+# Data Configuration
+DATA_PATH=./data
+```
+
+## 📊 Data Sources
+
+The application uses CSV data files for demonstration:
+- `inventory.csv`: Product inventory data
+- `sales.csv`: Sales transaction data
+- `suppliers.csv`: Supplier information
+- `employee_schedules.csv`: Employee scheduling data
+
+## 🚀 Deployment
+
+### Frontend Deployment (Vercel/Netlify)
 ```bash
-pip install -r requirements.txt
+# Build the project
+npm run build
+
+# Deploy to Vercel
+vercel --prod
+
+# Or deploy to Netlify
+netlify deploy --prod
 ```
 
-3. **Generate sample data** (optional - data is already included)
+### Backend Deployment (Heroku/Railway)
 ```bash
-cd data
-python generate_data.py
+# Create Procfile
+echo "web: python app.py" > Procfile
+
+# Deploy to Heroku
+heroku create
+git push heroku main
 ```
 
-4. **Run the application**
+### Docker Deployment
 ```bash
-streamlit run app.py
+# Build and run with Docker
+docker build -t wastezero-dashboard .
+docker run -p 3000:3000 wastezero-dashboard
 ```
 
-5. **Open your browser**
-Navigate to `http://localhost:8501`
-
-## 📁 **Project Structure**
-
-```
-WasteZero/
-├── app.py                          # Main Streamlit application
-├── requirements.txt                # Python dependencies
-├── README.md                       # Project documentation
-├── data/
-│   ├── generate_data.py           # Data generation script
-│   ├── inventory.csv              # Product inventory data
-│   ├── sales.csv                  # Sales transaction data
-│   ├── suppliers.csv              # Supplier information
-│   └── employee_schedules.csv     # Employee schedule data
-├── utils/
-│   ├── waste_prediction.py        # Waste prediction algorithms
-│   ├── energy_optimization.py     # Energy optimization logic
-│   ├── supplier_analytics.py      # Supplier analysis
-│   └── seasonal_analytics.py      # Seasonal trend analysis
-└── docs/
-    ├── HACKATHON_DEMO_IMPROVEMENTS.md
-    ├── AUTOMATIC_THRESHOLDS.md
-    └── EXPIRY_LOGIC.md
-```
-
-## 🎪 **Hackathon Demo Features**
-
-### **Immediate Impact**
-- **67+ Products at Risk**: Realistic scenarios with products expiring soon
-- **Emergency Alerts**: Eye-catching notifications for urgent issues
-- **Financial Impact**: Clear ROI calculations ($X,XXX potential losses)
-- **Real-time Updates**: Live calculations and recommendations
-
-### **Technical Sophistication**
-- **AI/ML Integration**: Predictive modeling for waste and energy
-- **Dynamic Algorithms**: Self-adjusting thresholds and scoring
-- **Multi-category Analysis**: 7 product categories with different logic
-- **Real-time Processing**: Live data analysis and visualization
-
-### **Business Value**
-- **Cost Reduction**: Prevents waste and reduces energy bills
-- **Inventory Optimization**: Better stock management and ordering
-- **Sustainability Goals**: Measurable environmental impact
-- **Operational Efficiency**: Automated insights and recommendations
-
-## 💰 **Business Impact**
-
-### **Cost Savings**
-- **Waste Reduction**: 15-30% reduction in expired inventory
-- **Energy Optimization**: 20-40% reduction in energy costs
-- **Operational Efficiency**: Automated insights save management time
-- **Supplier Optimization**: Better supplier selection reduces costs
-
-### **Sustainability Benefits**
-- **Environmental Impact**: Reduced waste and energy consumption
-- **GreenScore Tracking**: Measurable sustainability improvements
-- **Compliance**: Better inventory management for regulatory requirements
-- **Brand Value**: Enhanced reputation through sustainability practices
-
-## 🎯 **Use Cases**
-
-1. **Retail Store Managers**: Daily operations and inventory decisions
-2. **Supply Chain Teams**: Supplier management and ordering
-3. **Sustainability Officers**: Environmental impact tracking
-4. **Operations Directors**: Cost optimization and efficiency
-5. **Hackathon Projects**: Technical innovation and business value demonstration
-
-## 🔧 **Configuration**
-
-### **Automatic Thresholds**
-The system automatically calculates optimal risk thresholds based on:
-- Product category (Groceries, Electronics, Clothing, etc.)
-- Expiry type (Shelf Life, Warranty Period, Fashion Season, etc.)
-- Current inventory distribution (75th percentile analysis)
-
-### **Energy Settings**
-- **Store Hours**: Configurable opening/closing times
-- **Energy Reduction**: Adjustable percentage for off-peak savings
-- **Peak Detection**: Automatic identification of busy periods
-
-## 📈 **Future Enhancements**
-
-- [ ] **Database Integration**: PostgreSQL/MySQL for production use
-- [ ] **Real-time APIs**: Integration with POS systems
-- [ ] **Mobile App**: React Native mobile application
-- [ ] **Advanced ML**: Deep learning for better predictions
-- [ ] **Multi-store Support**: Chain-wide analytics
-- [ ] **API Endpoints**: RESTful API for external integrations
-
-## 🤝 **Contributing**
+## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 **License**
+## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 **Author**
+## 🙏 Acknowledgments
 
-**Praveen K** - [GitHub](https://github.com/PRAVEENK44)
+- React and TypeScript community
+- Tailwind CSS for the beautiful UI components
+- Chart.js for data visualization
+- Python data science ecosystem
 
-## 🙏 **Acknowledgments**
+## 📞 Support
 
-- **Streamlit** for the amazing web framework
-- **Pandas** for powerful data manipulation
-- **Hackathon Community** for inspiration and feedback
-
----
-
-## 🏆 **Perfect for Hackathon Presentation**
-
-This application demonstrates:
-- **AI/ML Innovation**: Advanced predictive analytics
-- **Real Business Problems**: Actual retail challenges
-- **Technical Complexity**: Multi-layered algorithms and data processing
-- **Visual Appeal**: Modern UI with compelling data visualization
-- **Immediate Value**: Clear ROI and actionable insights
-- **Scalability**: Can be adapted for any retail business
-
-**WasteZero** transforms complex retail data into actionable intelligence, making it an ideal hackathon project that showcases both technical expertise and business acumen! 🎯
+For support, email support@wastezero.com or create an issue in this repository.
 
 ---
 
-⭐ **Star this repository if you find it helpful!**
+**Built with ❤️ for sustainable retail management**
